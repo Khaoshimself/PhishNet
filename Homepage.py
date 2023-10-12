@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+from streamlit_extras.app_logo import add_logo
 import pandas as pd
 import numpy as np
 import time
@@ -8,6 +9,9 @@ st.title('PhishNet')
 
 #image = Image.open('Logo.jpg')
 #st.image(image, caption='PhishNet first logo')
+
+add_logo("LogoFr.png", height=150)
+
 
 #tabs
 tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
